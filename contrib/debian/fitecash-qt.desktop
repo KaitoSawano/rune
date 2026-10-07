@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Runecash Core
+Comment=Connect to the Runecash P2P Network
+Comment[de]=Verbinde mit dem Runecash peer-to-peer Netzwerk
+Comment[fr]=Runecash, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Runecash, eşten eşe kriptografik sanal para birimi
+Exec=runecash-qt %u
+Terminal=false
+Type=Application
+Icon=runecash128
+MimeType=x-scheme-handler/runecash;
+Categories=Office;Finance;

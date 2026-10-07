@@ -1,0 +1,33 @@
+# /etc/conf.d/runecashd: config file for /etc/init.d/runecashd
+
+# Config file location
+#RUNECASHD_CONFIGFILE="/etc/runecash/runecash.conf"
+
+# What directory to write pidfile to?  (created and owned by $RUNECASHD_USER)
+#RUNECASHD_PIDDIR="/var/run/runecashd"
+
+# What filename to give the pidfile
+#RUNECASHD_PIDFILE="${RUNECASHD_PIDDIR}/runecashd.pid"
+
+# Where to write runecashd data (be mindful that the blockchain is large)
+#RUNECASHD_DATADIR="/var/lib/runecashd"
+
+# User and group to own runecashd process
+#RUNECASHD_USER="runecash"
+#RUNECASHD_GROUP="runecash"
+
+# Path to runecashd executable
+#RUNECASHD_BIN="/usr/bin/runecashd"
+
+# Nice value to run runecashd under
+#RUNECASHD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+RUNECASHD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for runecashd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+RUNECASHD_SIGTERM_TIMEOUT=60

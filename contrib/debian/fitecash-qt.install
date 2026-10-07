@@ -1,0 +1,6 @@
+usr/local/bin/runecash-qt usr/bin
+share/pixmaps/runecash32.xpm usr/share/pixmaps
+share/pixmaps/runecash16.xpm usr/share/pixmaps
+share/pixmaps/runecash128.png usr/share/pixmaps
+debian/runecash-qt.desktop usr/share/applications
+debian/runecash-qt.protocol usr/share/kde4/services/
